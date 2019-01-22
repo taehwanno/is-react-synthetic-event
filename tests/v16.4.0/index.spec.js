@@ -6,7 +6,7 @@ import pkg from './package.json';
 import createExpect from '../create-expect';
 
 /**
- * See https://github.com/facebook/react/blob/v16.0.0/src/renderers/shared/shared/event/SyntheticEvent.js
+ * See https://github.com/facebook/react/blob/v16.4.0/packages/events/SyntheticEvent.js
  */
 describe(`${pkg.name} isReactSyntheticEvent`, () => {
   const expectIsReactSyntheticEvent = createExpect(React, ReactDOM, ReactTestUtils);
