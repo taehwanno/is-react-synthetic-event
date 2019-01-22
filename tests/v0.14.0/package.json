@@ -1,0 +1,17 @@
+{
+  "name": "v0.14.0",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Taehwan Noh <taehwanno.dev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "react": "0.14.0",
+    "react-addons-test-utils": "0.14.0",
+    "react-dom": "0.14.0",
+    "jest": "^23.6.0"
+  }
+}

@@ -1,0 +1,6 @@
+coverage/
+dist/
+node_modules/
+husky.config.js
+lint-staged.config.js
+prettier.config.js

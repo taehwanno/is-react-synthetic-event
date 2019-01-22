@@ -1,0 +1,33 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/is-react-synthetic-event
+    docker:
+      - image: circleci/node:10.15.0
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+      - run:
+          name: Install Dependency
+          command: |
+            npm ci
+            npm run bootstrap
+      - save_cache:
+          key: dependency-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Lint
+          command: npm run lint
+      - run:
+          name: Build
+          command: npm run build
+      - run:
+          name: Test
+          command: |
+            npm run test:coverage
+            cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+      - store_artifacts:
+          path: coverage
