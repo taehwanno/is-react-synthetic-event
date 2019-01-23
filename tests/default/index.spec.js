@@ -9,5 +9,6 @@ describe('isReactSyntheticEvent', () => {
     expect(isReactSyntheticEvent('string')).toBe(false);
     expect(isReactSyntheticEvent(Symbol())).toBe(false);
     expect(isReactSyntheticEvent([])).toBe(false);
+    expect(isReactSyntheticEvent(Object.create(null))).toBe(false);
   });
 });
