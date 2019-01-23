@@ -111,7 +111,6 @@ The difference of before and after using the variation of redux-actions `createA
 ```diff
 import React from 'react';
 import { connect } from 'react-redux';
-import isReactSyntheticEvent from 'is-react-synthetic-event';
 
 // Same as createAction in examples.
 import createAction from '../store/createAction';
