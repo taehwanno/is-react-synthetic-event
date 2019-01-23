@@ -41,7 +41,7 @@ function isReactSyntheticEvent(event: any): boolean
 
 Because implementation uses some properties related to only internal purpose in React, this package implementation is a bit dangerous. Therefore, it can not be used if the underlying implementation changes.
 
-[The implementation is tested by each major version starting from v0.14](https://github.com/taehwanno/is-react-synthetic-event/tree/master/tests), and [the implementation can be seen here.](https://github.com/taehwanno/is-react-synthetic-event/blob/master/src/index.js)
+[The implementation is tested by each specific version starting from v0.14](https://github.com/taehwanno/is-react-synthetic-event/tree/master/tests), and [the implementation can be seen here.](https://github.com/taehwanno/is-react-synthetic-event/blob/master/src/index.js)
 
 - **Is there a reason you did not compare strings like below?**
 
@@ -52,7 +52,7 @@ function isReactSyntheticEvent(event) {
     if (proto.constructor.name === 'SyntheticEvent') {
       return true;
     }
-    proto = Object.getPrototypeOf(event);
+    proto = Object.getPrototypeOf(proto);
   }
   return false;
 }
