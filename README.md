@@ -135,7 +135,7 @@ class Example extends React.Component {
 const createConnection = createAction('CONNECTION_CREATE');
 const mapDispatchToProps = { createConnection };
 
-export default connect(undefined, mapDispatchToProps);;
+export default connect(undefined, mapDispatchToProps);
 ```
 
 ## Contribution
