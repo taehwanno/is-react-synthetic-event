@@ -4,13 +4,8 @@
   "private": true,
   "author": "Taehwan Noh <taehwanno.dev@gmail.com>",
   "license": "MIT",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch"
-  },
   "devDependencies": {
     "react": "16.4.0",
-    "react-dom": "16.4.0",
-    "jest": "^23.6.0"
+    "react-dom": "16.4.0"
   }
 }
