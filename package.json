@@ -26,7 +26,8 @@
     "prettier": "prettier-eslint --write src/**/*.js tests/**/*.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "ncu": "ncu"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
