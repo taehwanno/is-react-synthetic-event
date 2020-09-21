@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/is-react-synthetic-event
     docker:
-      - image: circleci/node:10.15.0
+      - image: circleci/node:12.14.1
     steps:
       - checkout
       - restore_cache:
