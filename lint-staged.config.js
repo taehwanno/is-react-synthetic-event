@@ -1,5 +1,3 @@
 module.exports = {
-  linters: {
-    '*.js': ['prettier-eslint --write', 'git add', 'jest --findRelatedTests'],
-  },
+  "*.js": ["prettier-eslint --write", "jest --findRelatedTests"],
 };
