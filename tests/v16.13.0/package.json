@@ -1,0 +1,11 @@
+{
+  "name": "v16.13.0",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Taehwan Noh <taehwanno.dev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
+  }
+}

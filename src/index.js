@@ -8,6 +8,7 @@
  * @see https://github.com/facebook/react/blob/v15.0.0/src/renderers/dom/client/syntheticEvents/SyntheticEvent.js
  * @see https://github.com/facebook/react/blob/v16.0.0/src/renderers/shared/shared/event/SyntheticEvent.js
  * @see https://github.com/facebook/react/blob/v16.4.0/packages/events/SyntheticEvent.js
+ * @see https://github.com/facebook/react/blob/v16.13.0/packages/legacy-events/SyntheticEvent.js
  */
 export default function isReactSyntheticEvent(event) {
   if (typeof event !== 'object' || event === null) {
