@@ -1,6 +1,6 @@
 {
   "name": "is-react-synthetic-event",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
   "module": "dist/index.mjs",
