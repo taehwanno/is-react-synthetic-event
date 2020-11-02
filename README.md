@@ -1,4 +1,4 @@
-# is-react-synthetic-event [![npm version](https://badge.fury.io/js/is-react-synthetic-event.svg)](https://badge.fury.io/js/is-react-synthetic-event) [![Coverage Status](https://coveralls.io/repos/github/taehwanno/is-react-synthetic-event/badge.svg?branch=master)](https://coveralls.io/github/taehwanno/is-react-synthetic-event?branch=master) [![CircleCI](https://circleci.com/gh/taehwanno/is-react-synthetic-event.svg?style=shield&circle-token=8b1bede88ffe4132550adc8c26a079ad45d866a7)](https://circleci.com/gh/taehwanno/is-react-synthetic-event)
+# is-react-synthetic-event [![npm version](https://badge.fury.io/js/is-react-synthetic-event.svg)](https://badge.fury.io/js/is-react-synthetic-event) [![Coverage Status](https://coveralls.io/repos/github/taehwanno/is-react-synthetic-event/badge.svg?branch=main)](https://coveralls.io/github/taehwanno/is-react-synthetic-event?branch=main) [![CircleCI](https://circleci.com/gh/taehwanno/is-react-synthetic-event.svg?style=shield&circle-token=8b1bede88ffe4132550adc8c26a079ad45d866a7)](https://circleci.com/gh/taehwanno/is-react-synthetic-event)
 
 > Is it react synthetic event?
 
@@ -41,7 +41,7 @@ function isReactSyntheticEvent(event: any): boolean
 
 Because implementation uses some properties related to only internal purpose in React, this package implementation is a bit dangerous. Therefore, it can not be used if the underlying implementation changes.
 
-[The implementation is tested by each specific version starting from v0.14](https://github.com/taehwanno/is-react-synthetic-event/tree/master/tests), and [the implementation can be seen here.](https://github.com/taehwanno/is-react-synthetic-event/blob/master/src/index.js)
+[The implementation is tested by each specific version starting from v0.14](https://github.com/taehwanno/is-react-synthetic-event/tree/main/tests), and [the implementation can be seen here.](https://github.com/taehwanno/is-react-synthetic-event/blob/main/src/index.js)
 
 - **Is there a reason you did not compare strings like below?**
 
@@ -86,7 +86,7 @@ ReactDOM.render(<Button />, document.body);
 ```js
 import isReactSyntheticEvent from 'is-react-synthetic-event';
 
-function createAction(type, payloadCreator = v => v) {
+function createAction(type, payloadCreator = (v) => v) {
   if (typeof type !== 'string') throw new Error('type must be string');
   if (typeof payloadCreator !== 'function') throw new Error('payload creator must be function');
 
