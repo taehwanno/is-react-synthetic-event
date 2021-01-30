@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [1.1.0](https://github.com/taehwanno/is-react-synthetic-event/compare/v1.0.1...v1.1.0) - 2021-01-31
+## [1.1.1](https://github.com/taehwanno/is-react-synthetic-event/compare/v1.1.0...v1.1.1) - 2021-01-31
 
 - Republish v1.1.0 because of missing dist file.
 
