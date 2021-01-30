@@ -65,18 +65,18 @@ If you have a build process, because the name of the constructor (`'SyntheticEve
 ### Custom React Hooks
 
 ```jsx
-import React, { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import isReactSyntheticEvent from 'is-react-synthetic-event';
 
 const useForm = (initialValue = '') => {
   const [value, setValue] = useState(initialValue);
 
   const handleChange = useCallback((value) => {
-    if (isReactSyntheticEvent(event)) {
+    if (isReactSyntheticEvent(value)) {
       throw new Error('handleChange parameter must be string, not a event');
     }
     setValue(value);
-  });
+  }, []);
 
   return {
     value,
