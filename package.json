@@ -23,6 +23,7 @@
     "build": "microbundle",
     "clean": "rimraf dist",
     "lint": "eslint src/* tests/*",
+    "prepublishOnly": "npm run build",
     "prettier": "prettier-eslint --write src/**/*.js tests/**/*.js",
     "test": "jest",
     "test:coverage": "jest --coverage",
